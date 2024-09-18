@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert Tutoring Services | Daniel's Academic Support</title>
+    <meta name="description" content="Specialized tutoring in Physics, Calculus, and Math for High School, AP, and College students. Experienced tutor with Harvard background.">
+    <meta name="keywords" content="tutoring, physics, calculus, math, AP courses, college prep, academic support">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --accent-color: #ed8936;
+            --text-color: #2d3748;
+            --background-color: #f7fafc;
+            --white: #ffffff;
+            --light-gray: #edf2f7;
+        }
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        .logo {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--white);
+            text-decoration: none;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.3s ease;
+            font-size: 1.1rem;
+        }
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+            color: var(--primary-color);
+        }
+        .hero {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--white);
+            padding: 6rem 0;
+            margin-bottom: 3rem;
+        }
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+        .hero-image img {
+            max-width: 300px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .section {
+            background-color: var(--white);
+            padding: 4rem;
+            margin-bottom: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .highlight {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 600;
+        }
+        .testimonial {
+            font-style: italic;
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 30px 0;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+        }
+        .cta {
+            background-color: var(--accent-color);
+            color: var(--white);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .cta:hover {
+            background-color: #dd6b20;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .hero-image {
+                margin-top: 2rem;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .section {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Daniel's Academic Support</a>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Expert Tutoring Services</h1>
+                    <p>Elevate your academic performance with personalized guidance in Physics, Calculus, and Math</p>
+                    <a href="#contact" class="cta">Schedule Your Session</a>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.craigslist.org/00Z0Z_afxn3No7eGj_09b07g_1200x900.jpg" alt="Daniel - Expert Tutor">
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>With over a decade of teaching and tutoring experience, I bring a wealth of knowledge and a passion for education to every session. My background includes:</p>
+                <ul>
+                    <li>Graduate-level coursework in applied math and scientific computing at Harvard University</li>
+                    <li>Bachelor's degree in Math with a perfect 4.0 GPA in Physics and Calculus sequence</li>
+                    <li>A proven track record of helping students dramatically improve their grades and confidence</li>
+                    <li>A patient, friendly, and understanding approach tailored to each student's unique needs</li>
+                </ul>
+            </section>
+
+            <section id="subjects" class="section">
+                <h2>Subjects Offered</h2>
+                <p>I specialize in a range of challenging subjects, providing expert guidance for high school, AP, and college-level courses:</p>
+                <div class="grid">
+                    <div class="card">
+                        <h3><span class="highlight">Physics</span></h3>
+                        <p>AP Physics 1&2, C, College and University Physics I & II</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="highlight">Mathematics</span></h3>
+                        <p>AP Calculus AB/BC, Calculus, Pre-Calculus, Geometry, Trigonometry, Algebra, College Algebra</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="highlight">Chemistry</span></h3>
+                        <p>High School and College Chem I & II</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="highlight">Computer Science</span></h3>
+                        <p>Introduction to Programming and advanced topics</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="highlight">Statistics</span></h3>
+                        <p>High School, College, AP</p>
+                    </div>
+                    <div class="card">
+                        <h3><span class="highlight">Test Prep</span></h3>
+                        <p>SAT, GMAT, GRE, and more</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="services" class="section">
+                <h2>Tutoring Services</h2>
+                <div class="grid">
+                    <div>
+                        <h3>Comprehensive Approach</h3>
+                        <ul>
+                            <li>Personalized one-on-one sessions adapted to your learning style</li>
+                            <li>In-depth homework assistance and assignment support</li>
+                            <li>Strategic test preparation and study techniques</li>
+                            <li>Flexible scheduling to fit your busy lifestyle</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Online Tutoring Platform</h3>
+                        <ul>
+                            <li>Interactive sessions via Google Meet with a digital whiteboard</li>
+                            <li>Real-time collaboration and visual problem-solving</li>
+                            <li>Recorded sessions and saved notes for future reference</li>
+                            <li>User-friendly interface accessible from any device</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Rates and Packages</h3>
+                <ul>
+                    <li>Starting at $60 per hour for individual sessions</li>
+                    <li>Discounted packages available for multiple sessions</li>
+                    <li>Custom plans tailored to your specific needs and goals</li>
+                </ul>
+            </section>
+
+            <section id="testimonials" class="section">
+                <h2>Student Success Stories</h2>
+                <div class="testimonial">
+                    <p>"Daniel's tutoring was a game-changer for my Physics 1 course. His responsive communication and efficient session management helped me transform my performance from a failing grade to an A on the final exam. Daniel's focus on conceptual understanding equipped me with problem-solving skills that have proven valuable across all my classes."</p>
+                    <p><strong>— Kathy R., Pre-Med Student, Texas Christian University</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"I can confidently say that Daniel is the most exceptional tutor I've ever worked with. His profound knowledge of physics and math, coupled with his ability to break down complex concepts, made even the most challenging topics accessible. After missing a week of school, Daniel helped me catch up so effectively that I scored 100% on the subsequent quiz. His kindness and patience make him an ideal tutor for anyone seeking academic improvement."</p>
+                    <p><strong>— Matt M., High School Senior, All Saints' Episcopal School</strong></p>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Get Started Today</h2>
+                <p>Ready to elevate your academic performance? Contact me to schedule your personalized tutoring session or to learn more about how I can support your educational journey.</p>
+                <p><strong>Name:</strong> Daniel</p>
+                <p><strong>Phone:</strong> (903) 884-6744</p>
+                <a href="tel:9038846744" class="cta">Call Now</a>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Daniel's Academic Support. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
